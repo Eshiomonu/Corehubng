@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'Home | Your Company Name')
+@section('description', 'Your Company Name offers IT consultation, web & software development, design, electronics, logistics, and education services.')
 
 @section('content')
 <section class="relative overflow-hidden bg-white">

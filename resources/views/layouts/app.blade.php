@@ -2,11 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'My Website')</title>
+    <title>@yield('title', 'Your Company Name | IT Solutions, Web Development & More')</title>
+<meta name="description" content="@yield('description', 'We provide IT consultation, web & software development, graphics design, electronics sales, logistics, and education services.')">
+<meta name="keywords" content="IT consultation, web development, software development, graphic design, electronics, logistics, education services">
+<meta name="author" content="Your Company Name">
+<meta name="robots" content="index, follow">
 
-    <!-- Main CSS -->
-    <!-- <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> -->
+<!-- Open Graph for social sharing -->
+<meta property="og:title" content="@yield('title', 'Your Company Name')" />
+<meta property="og:description" content="@yield('description', 'IT solutions and services for your business.')" />
+<meta property="og:image" content="{{ asset('assets/images/og-image.jpg') }}" />
+<meta property="og:url" content="{{ url()->current() }}" />
+<meta property="og:type" content="website" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="@yield('title', 'Your Company Name')" />
+<meta name="twitter:description" content="@yield('description', 'IT solutions and services for your business.')" />
+<meta name="twitter:image" content="{{ asset('assets/images/og-image.jpg') }}" />
+
+
+    <link rel="icon" href="{{ asset('assets/images/favicon.ico') }}" type="image/x-icon">
+<link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}" type="image/x-icon">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/images/apple-touch-icon.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/images/favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/images/favicon-16x16.png') }}">
+
      <!-- Swiper CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <!-- Tailwind CSS CDN -->
