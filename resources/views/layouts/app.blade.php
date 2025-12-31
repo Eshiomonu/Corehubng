@@ -42,6 +42,51 @@
 
     {{-- Footer --}}
     @include('partials.footer')
+<button id="scrollTopBtn"
+    class="fixed bottom-6 right-6 hidden bg-brand-red hover:bg-brand-dark
+           text-white p-3 rounded-full shadow-lg transition">
+    ↑
+</button>
+
+
+    <script>
+    const header = document.getElementById('mainHeader');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+            header.classList.add('shadow-md');
+        } else {
+            header.classList.remove('shadow-md');
+        }
+    });
+</script>
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+
+<script>
+    const scrollBtn = document.getElementById('scrollTopBtn');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollBtn.classList.remove('hidden');
+        } else {
+            scrollBtn.classList.add('hidden');
+        }
+    });
+
+    scrollBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });git add
+</script>
 
 </body>
 </html>
