@@ -7,6 +7,9 @@
 
     <!-- Main CSS -->
     <!-- <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> -->
+     <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!-- Tailwind CSS CDN -->
      <script src="https://cdn.tailwindcss.com"></script>
 
 <script>
@@ -85,7 +88,23 @@
             top: 0,
             behavior: 'smooth'
         });
-    });git add
+    });
+</script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".testimonial-swiper", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
+      640: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
+    autoplay: { delay: 5000 },
+    pagination: { el: ".swiper-pagination", clickable: true },
+  });
 </script>
 
 </body>
