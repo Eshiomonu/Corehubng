@@ -17,6 +17,7 @@
             <nav class="hidden md:flex items-center gap-8 font-medium text-brand-gray">
                 <a href="/" class="hover:text-brand-red transition">Home</a>
                 <a href="/about" class="hover:text-brand-red transition">About</a>
+                <a href="/services" class="hover:text-brand-red transition">Services</a>
                 <a href="/blog" class="hover:text-brand-red transition">Blog</a>
                 <a href="/contact" class="hover:text-brand-red transition">Contact</a>
             </nav>
@@ -47,6 +48,7 @@
         <nav class="flex flex-col px-6 py-4 gap-4 text-brand-gray font-medium">
             <a href="/" class="hover:text-brand-red">Home</a>
             <a href="/about" class="hover:text-brand-red">About</a>
+            <a href="/services" class="hover:text-brand-red">Services</a>
             <a href="/blog" class="hover:text-brand-red">Blog</a>
             <a href="/contact" class="hover:text-brand-red">Contact</a>
 
